@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putthipong - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ============================= -->
+    <!-- ส่วน Header Section -->
+    <!-- ============================= -->
+    <!-- ส่วนหัวของเว็บไซต์ ประกอบด้วยโลโก้ ชื่อ ตำแหน่ง และเมนูนำทาง (Navigation) -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Putthipong Puangkaew</h1>
+                <p>Web Developer</p>
+            </div>
+            <nav class="nav-menu">
+                <!-- เมนูนำทางแต่ละอันจะลิงก์ไปยัง section ต่าง ๆ ของหน้าเว็บ -->
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li> <!-- เมนูหน้าแรก -->
+                    <li><a href="#about" class="nav-link">About</a></li> <!-- เมนูเกี่ยวกับ -->
+                    <li><a href="#skills" class="nav-link">Skills</a></li> <!-- เมนูทักษะ -->
+                    <li><a href="#projects" class="nav-link">Projects</a></li> <!-- เมนูโปรเจกต์ -->
+                    <li><a href="#contact" class="nav-link">Contact</a></li> <!-- เมนูติดต่อ -->
+                </ul>
+            </nav>
+            <!-- ปุ่มเปิด/ปิดเมนูสำหรับมือถือ (Mobile menu toggle) -->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================= -->
+    <!-- ส่วน Hero Section -->
+    <!-- ============================= -->
+    <!-- ส่วนแนะนำตัวสั้น ๆ และปุ่มลิงก์ไปยังโปรเจกต์และติดต่อ -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Creating Beautiful Web Experiences</h2>
+                <p></p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ส่วน About Section -->
+    <!-- ============================= -->
+    <!-- ข้อมูลเกี่ยวกับตัวเอง รูปภาพ และสถิติผลงาน -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/PF.jpg" alt="Putthipong Profile Picture" class="profile-img">
+                </div>
+                <div class="about-text">
+                    <h3 class="typing-effect">Hello! I'm Putthipong Puangkaew</h3>
+                    <p>สวัสดีครับชื่อ พุฒิพงศ์ พวงแก้ว นะครับ ตอนนี้กำลังศึกษาที่  [คณะ วิทยาศาสตร์และเทคโนโลยี/สาขา เทคโนโลยีสารสนเทศ/มหาวิทยาลัยกรุงเทพธนบุรี ] ครับ ผมสนใจด้าน สิ่งที่สนใจหลักๆ เช่น Web Development, Frontend,Backend,UX/UI Design, Data Science, etc. มาได้ซักพักแล้ว เลยลองทำโปรเจกต์ต่างๆ เพื่อเสริมสร้างทักษะและเก็บประสบการณ์ครับ</p>
+                    <p>ใน Portfolio นี้ ผมได้รวบรวมผลงานที่ผ่านมา ซึ่งส่วนใหญ่เป็น โปรเจกต์ส่วนตัว, โปรเจกต์ที่ทำในชั้นเรียน ที่ได้ลองทำเองตั้งแต่ต้นจนจบครับ ถึงจะยังไม่ได้เก่งกาจอะไรมากมาย แต่ก็ตั้งใจทำเต็มที่ทุกชิ้นเลยครับ</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>1</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>0</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h4>0</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ส่วน Skills Section -->
+    <!-- ============================= -->
+    <!-- แสดงทักษะด้านเทคนิคและเครื่องมือที่ใช้ -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS3/Sass</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 20%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-icons">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive</span>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="fas fa-search"></i>
+                            <span>SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ส่วน Featured Projects Section -->
+    <!-- ============================= -->
+    <!-- แสดงโปรเจกต์เด่น ๆ ที่เคยทำ -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/508554243_619653053861907_4449380600233109014_n.png" alt="Magic Times Table">
+                        <div class="project-overlay">
+                            <a href="https://replit.com/@kawowja/Python-Multiply-GUI?v=1" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Magic Times Table</h3>
+                        <p>"Magic Times Table" is an application designed to help you practice and master multiplication tables quickly and enjoyably. Whether you're a student learning the basics or an adult looking to brush up on your skills, this app will make learning multiplication easier than ever.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Task Management App">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>An interactive weather dashboard with location-based forecasts, data visualization, and a clean, intuitive user interface.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>API Integration</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <a href="portfolio.html" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ส่วน Contact Section -->
+    <!-- ============================= -->
+    <!-- ช่องทางติดต่อ ข้อมูลติดต่อ และฟอร์มส่งข้อความ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>ติอต่อสอบถาม</h3>
+                    <p>"ไม่กลัวงานยาก พร้อมปรับตัวและเรียนรู้! ผม/หนูเชื่อว่าทุกความท้าทายเป็นโอกาสในการเติบโต และพร้อมทุ่มเทเพื่อเรียนรู้งานใหม่ๆ อยู่เสมอครับ มาคุยกันนะครับ ติดต่อได้ที่</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>pkputthipong@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>0964939795</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Thailand Samut Sakhon Ban Phaeo</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/p_putthipong/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/pplaykung" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ส่วน Footer -->
+    <!-- ============================= -->
+    <!-- ส่วนท้ายของเว็บไซต์ แสดงลิขสิทธิ์ -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Putthipong Puangkaew</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</body>
+</html>

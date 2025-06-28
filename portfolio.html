@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Putthipong</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ============================= -->
+    <!-- ส่วน Header Section -->
+    <!-- ============================= -->
+    <!-- ส่วนหัวของเว็บไซต์ ประกอบด้วยชื่อ โลโก้ และเมนูนำทาง (Navigation) -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Putthipong Puangkaew</h1>
+                <p>Web Developer</p>
+            </div>
+            <nav class="nav-menu">
+                <!-- เมนูนำทางแต่ละอันจะลิงก์ไปยังหน้า index.html หรือ section ต่าง ๆ ในหน้าแรก -->
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================= -->
+    <!-- ส่วน Portfolio Hero Section -->
+    <!-- ============================= -->
+    <!-- ส่วนหัวของหน้า Portfolio แสดงชื่อหัวข้อและคำอธิบายสั้น ๆ -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-header">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Home
+                </a>
+                <h1>My Portfolio</h1>
+                <p>A collection of projects that showcase my skills and passion for web development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ส่วน Portfolio Grid Section -->
+    <!-- ============================= -->
+    <!-- ส่วนแสดงโปรเจกต์ทั้งหมด พร้อมปุ่ม filter เลือกหมวดหมู่ -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-filter">
+                <!-- ปุ่ม filter สำหรับเลือกดูโปรเจกต์ตามหมวดหมู่ -->
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- โปรเจกต์แต่ละอันจะแสดงในรูปแบบ card สามารถ filter ได้ตามหมวด -->
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/508554243_619653053861907_4449380600233109014_n.png" alt="Magic Times Table">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <h3>Magic Times Table</h3>
+                                <p>Python Demo</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://replit.com/@kawowja/Python-Multiply-GUI?v=1" class="portfolio-link"><i class="fab fa-google"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Magic Times Table</h3>
+                        <p>"Magic Times Table" is an application designed to help you practice and master multiplication tables quickly and enjoyably. Whether you're a student learning the basics or an adult looking to brush up on your skills, this app will make learning multiplication easier than ever.</p>
+                        <div class="portfolio-tech">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Task Management App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <h3>Task Management App</h3>
+                                <p>Collaborative project management</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Task Management App</h3>
+                        <p>Real-time collaborative task management with drag-and-drop functionality and team features.</p>
+                        <div class="portfolio-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Vuetify</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Weather Dashboard">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <h3>Weather Dashboard</h3>
+                                <p>Interactive weather application</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Beautiful weather dashboard with location-based forecasts and interactive data visualization.</p>
+                        <div class="portfolio-tech">
+                            <span>JavaScript</span>
+                            <span>Chart.js</span>
+                            <span>OpenWeather API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Fitness Tracker App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <h3>Fitness Tracker</h3>
+                                <p>Mobile fitness application</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Fitness Tracker App</h3>
+                        <p>Mobile-first fitness tracking application with workout plans and progress monitoring.</p>
+                        <div class="portfolio-tech">
+                            <span>React Native</span>
+                            <span>Redux</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Brand Identity Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <h3>Brand Identity</h3>
+                                <p>Complete brand design system</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Brand Identity Design</h3>
+                        <p>Complete brand identity system including logo, color palette, and design guidelines.</p>
+                        <div class="portfolio-tech">
+                            <span>Figma</span>
+                            <span>Illustrator</span>
+                            <span>Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <h3>Restaurant Website</h3>
+                                <p>Modern restaurant web presence</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Restaurant Website</h3>
+                        <p>Elegant restaurant website with online reservations and menu management system.</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ส่วน Footer -->
+    <!-- ============================= -->
+    <!-- ส่วนท้ายของเว็บไซต์ แสดงลิขสิทธิ์ -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Putthipong Puangkaew</p>
+        </div>
+    </footer>
+</body>
+</html>
